@@ -246,7 +246,7 @@ module.exports = (env, argv) => {
         config.plugins.push(new CleanWebpackPlugin());
     } else {
         config.plugins.push(new LiveReloadPlugin({
-            appendScriptTag: true
+            appendScriptTag: false
         }))
     }
     return config;
