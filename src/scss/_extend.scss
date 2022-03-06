@@ -21,16 +21,16 @@
 
 .headline-2 {
     @extend .headline-1;
-    font-size: 44px;
+    font-size: 36px;
     line-height: 59px;
   
     @include desktop-smaller {
-      font-size: 32px;
+      font-size: 24x;
       line-height: 43px;
     }
   
     @include mobile {
-      font-size: 26px;
+      font-size: 16px;
       line-height: 34px;
     }
   }

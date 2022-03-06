@@ -69,22 +69,87 @@
         width: 100%;
         min-height: 500px;
         transition: filter .6s ease;
-        background-image: url(../img/main.jpg);
+        background-image: url(../img/main_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
-
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0; 
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: #2A6CEA;
-            opacity: .8;
-        }
     }
+
+  .subheader-row {
+    background-color: rgba(0,0,0,.6);
+    padding: 16px 15px;
+    color: #fff;
+    height: 87px;
+    position: relative;
+    z-index: 100;
+
+    .subheader {
+      max-width: 950px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo-block {
+        .logo {
+          width: 285px;
+          height: 32px;
+          background: url("../img/uber-logo.svg") left center no-repeat;
+          background-size: contain;
+        }
+        .text {
+          margin-top: 6px;
+          font-size: 13px;
+        }
+      }
+      .callback-block {
+        display: flex;
+        align-items: center;
+        .phone-block {
+          margin-right: 30px;
+          .text{
+            font-size: $indent12;
+          }
+          .phone {
+            font-size: $indent22;
+            margin-top: 10px;
+          }
+        }
+        .call-back {
+          padding: $indent16 $indent24;
+        }
+      }
+    }
+  }
+  .subheader-mobile-row {
+    background-color: rgba(0, 0, 0, .6);
+    padding: 16px 15px;
+    color: #fff;
+    height: 87px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 130px;
+      height: 32px;
+      background: url("../img/uber-logo.svg") left center no-repeat;
+      background-size: contain;
+    }
+
+    .call-back-block {
+      text-align: center;
+      .phone {
+
+      }
+      .call-back-mobile {
+        padding: 5px 10px;
+        margin-top: 8px;
+      }
+    }
+
+  }
 }
   
 .footer {

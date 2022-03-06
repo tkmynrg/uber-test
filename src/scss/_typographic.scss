@@ -65,10 +65,11 @@
     text-decoration: none;
     font-family: $fontBold;
     border-radius: $indent4;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 
     &:hover {
-        background: $colorLightGray;
+      background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+      box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
     }
 
 

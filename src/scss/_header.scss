@@ -92,11 +92,16 @@
     &-content {
       display: flex;
       position: relative;
-      justify-content: space-between;
+      justify-content: end;
       align-items: center;
       margin: 0;
       height: 80px;
       z-index: 5;
+
+      @include mobile {
+        height: auto;
+        background: #212121;
+      }
   
       .site-logo {
         width: 100%;
@@ -108,7 +113,6 @@
       }
     }
   }
-  
 
 // Menu burger
 .menu-burger {
@@ -247,6 +251,11 @@
   
     .header-mobile {
       box-shadow: none;
+    }
+
+    .header-mobile-content {
+      background: $colorWhite;
+      transition: all 0.3 ease;
     }
   
     .menu-burger {
