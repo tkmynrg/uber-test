@@ -23,6 +23,7 @@
     @extend .headline-1;
     font-size: 36px;
     line-height: 59px;
+    text-transform: uppercase;
   
     @include desktop-smaller {
       font-size: 24x;
