@@ -1,0 +1,37 @@
+.uberX-block {
+  background-color: #070716;
+  padding: 80px 0;
+  height: 500px;
+}
+
+.uberX-white-block {
+  background: url("../img/mobile_bg.png") center (center / cover) no-repeat;
+  height: 397px;
+  display: flex;
+  justify-content: center;
+
+  @include only-mobile {
+    height: 0px;
+  }
+
+  .img-block {
+    max-width: 759px;
+    transform: translateY(-265px);
+      @include only-mobile {
+      max-width: 325px;
+      transform: translateY(-290px);
+    }
+
+    img {
+      max-width: 100%;
+    }
+    .description {
+      line-height: 24px;
+      font-size: 17px;
+
+        @include only-mobile {
+          color: $colorWhite;
+        }
+    }
+  }
+}
