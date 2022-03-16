@@ -1,0 +1,118 @@
+.footer {
+  .blue-line {
+    width: 301px;
+    height: 7px;
+    background-color: #1FBAD6;
+    margin: 0 auto;
+    transform: translateX(-95px);
+  }
+
+  .links-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 23px;
+    .social-links {
+      display: flex;
+      justify-content: flex-start;
+      a {
+        border-radius: 50%;
+        display: block;
+        height: 35px;
+        margin: 0 6px 0 0;
+        position: relative;
+        text-decoration: none;
+        width: 35px;
+
+        &.facebook {
+          background-image: url("../img/ico/facebook.svg");
+          background-size: cover;
+          background-position: 50%;
+        }
+
+        &.twitter {
+          background-image: url("../img/ico/twitter.svg");
+          background-size: cover;
+          background-position: 50%;
+        }
+
+        &.linkedln {
+          background-image: url("../img/ico/linkdln.svg");
+          background-size: cover;
+          background-position: 50%;
+        }
+
+        &.instagram {
+          background-image: url("../img/ico/instagram.svg");
+          background-size: cover;
+          background-position: 50%;
+        }
+      }
+    }
+
+    .main-links {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .main-links-top {
+        margin-top: 15px;
+        a {
+          font-size: 15px;
+          color: #070716;
+          text-decoration: none;
+          margin: 0px 45px 0 0;
+        }
+      }
+
+      .main-links-center {
+        margin-top: 15px;
+        a {
+          font-size: 11px;
+          color: #999999;
+          text-decoration: none;
+          margin: 0px 30px 0 0;
+        }
+      }
+
+      .language {
+        margin-top: 15px;
+        color: #1CA8C3;
+        font-size: 11px
+      }
+    }
+    .app-buttons {
+      display: flex;
+      justify-content: flex-end;
+      width: 300px;
+      a {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        margin: 0 15px 0 0;
+        overflow: hidden;
+        width: 100%;
+
+        &.app-store {
+          background-image: url("../img/ico/app-store.svg");
+        }
+
+        &.google-play {
+          background-image: url("../img/ico/google-play.svg");
+        }
+
+        &.huawei-store {
+          background-image: url("../img/ico/huawei-appgallery.svg");
+        }
+
+        &:before {
+          content: "";
+          display: block;
+          padding-top: 29.6%;
+        }
+      }
+    }
+  }
+}
